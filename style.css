@@ -4,6 +4,7 @@ body{
 }
 main{
     display: flex;
+    margin: 40px 40px;
 }
 .headpanel {
     display: flex;
@@ -20,7 +21,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: 80%;
 }
 .boxes{
@@ -217,5 +218,6 @@ h1{
     }
     .information-b{
         display: flex;
+        justify-content: center;
     }
 }
