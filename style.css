@@ -5,10 +5,14 @@ body{
 main{
     display: flex;
 }
-.sidepanel {
+.headpanel {
     display: flex;
-    flex-direction: column;
+    justify-content:space-between;
+}
+.control-burner{
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 20%;
 }
 .field{
@@ -62,7 +66,7 @@ main{
 }
 .active-btn{
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 .btn{
     padding: 10px 24px;
@@ -83,13 +87,14 @@ h1{
     color: white;
 }
 .fresh{
-    font-size: 3.5rem;
-    font-weight: 900;
+    /*font-size: 3.5rem;
+    font-weight: 900;*/
+    color:#fdcb6e;
 }
 /*fire and animation*/
 #fire{
-    padding: 10px 24px;
-    border-radius: 2px;
+    padding: 24px;
+    border-radius: 50%;
     border: none;
     color: white;
     background-color: rgb(182, 120, 21);
@@ -197,4 +202,20 @@ h1{
     from {
         opacity: 0;
       }
+}
+
+.information-b{
+    display: none;
+}
+/*media queries*/
+@media screen and (max-width: 600px) {
+    .information{
+        display: none;
+    }
+    .headpanel{
+        justify-content: center;
+    }
+    .information-b{
+        display: flex;
+    }
 }

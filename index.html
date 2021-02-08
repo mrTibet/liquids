@@ -8,9 +8,11 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <main>
-        <div class="sidepanel">
-            <h1 id='tit'>Choose liquid and turn on gas burner</h1>
+    
+        <div class="headpanel">
+            <div class="information">
+                <h1 id='tit'>Choose liquid and turn on gas burner</h1>
+            </div>
         <div class="buttons active-btn" id="home-blue">
             
             <button class="btn" data-target="home-blue">Blue</button>
@@ -39,8 +41,8 @@
             <button class="btn" data-target="red">Red</button>
             <button class="btn" data-target="green">Green</button>
         </div>
-        <button id="fire" data-target="fire">Fire</button>
         </div>
+    <main> 
         <div class="field">
             <div class="line"></div>
             <div class="boxes">
@@ -62,10 +64,14 @@
         </div>
         <div class="gas-burner"></div>
         </div>
-        
+        <div class="control-burner">
+            <button id="fire" data-target="fire">Fire</button>
+        </div>
         </div>
     </main>
-    
+    <footer class="information-b">
+        <h1 id='tit'>Choose liquid and turn on gas burner</h1>
+    </footer>
     
 </body>
 </html>
