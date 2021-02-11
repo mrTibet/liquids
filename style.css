@@ -1,9 +1,12 @@
 body{
     margin: 0;
+    font-family: 'Roboto Mono', monospace;
     /*background-color: #F2F5FF;*/
 }
-main{
+.main{
     display: flex;
+    /*justify-content: center;
+    align-items: center;*/
     margin: 40px 40px;
 }
 .headpanel {
@@ -96,6 +99,8 @@ main{
     color:  #AAAAAA;*/
     border: 1px solid  #aabcc3 ;
     color:  #aabcc3;
+    font-size: 14px;
+    font-weight: 700;
     background: rgba( 255, 255, 255, 0.50);
     margin: 4px;
     cursor: pointer;
@@ -120,10 +125,15 @@ h1{
     border-radius: 50%;
     border: 1px solid  #AAAAAA ;
     color:  #AAAAAA;
+    font-size: 14px;
+    font-weight: 700;
     background: rgba( 255, 255, 255, 0.50);
     margin: 4px;
     cursor: pointer;
     outline: none;
+}
+#fire:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .fire {
     margin-top: 80px;
@@ -232,6 +242,11 @@ h1{
 .information-b{
     display: none;
     text-align: center;
+}
+
+footer p{
+    text-align: center;
+    font-size: 8px;
 }
 /*media queries*/
 @media screen and (max-width: 600px) {
