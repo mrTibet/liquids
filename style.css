@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    /*background-color: #71b9ce;*/
+    /*background-color: #F2F5FF;*/
 }
 main{
     display: flex;
@@ -12,8 +12,9 @@ main{
 }
 .control-burner{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     width: 20%;
 }
 .field{
@@ -52,12 +53,12 @@ main{
     height: 340px;
     border-bottom-left-radius: 4%;
     border-bottom-right-radius: 4%;
-    transition: all 3s ease-out;
+    transition: all 1.2s ease-out;
 }
 .line{
     width: 140px;
     height: 5px;
-    background-color: #dfe6e9;
+    background-color:rgba( 0, 0, 0, 0.1);
     border-top: 1px solid #bbb;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
@@ -69,15 +70,15 @@ main{
 }
 .yellow{
     display: flex;
-   background-color: rgb(251, 198, 7);
+   background-color: #F5E960;
 }
 .red{
     display: flex;
-    background-color: rgb(253, 25, 13);
+    background-color: #F49097;
 }
 .green{
     display: flex;
-    background-color: rgb(62, 199, 20);
+    background-color: #55D6C2;
 }
 /*buttons*/
 .buttons {
@@ -90,12 +91,15 @@ main{
 }
 .btn{
     padding: 14px 28px;
-    border-radius: 20%;
-    border: 1px solid  #AAAAAA ;
-    color:  #AAAAAA;
+    border-radius: 30%;
+    /*border: 1px solid  #AAAAAA ;
+    color:  #AAAAAA;*/
+    border: 1px solid  #aabcc3 ;
+    color:  #aabcc3;
     background: rgba( 255, 255, 255, 0.50);
     margin: 4px;
     cursor: pointer;
+    outline: none;
 }
 .btn:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -108,8 +112,6 @@ h1{
     color: #AAAAAA;;
 }
 .fresh{
-    /*font-size: 3.5rem;
-    font-weight: 900;*/
     color:#fdcb6e;
 }
 /*fire and animation*/
@@ -121,6 +123,7 @@ h1{
     background: rgba( 255, 255, 255, 0.50);
     margin: 4px;
     cursor: pointer;
+    outline: none;
 }
 .fire {
     margin-top: 80px;
@@ -228,6 +231,7 @@ h1{
 
 .information-b{
     display: none;
+    text-align: center;
 }
 /*media queries*/
 @media screen and (max-width: 600px) {
